@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+@font-face {
+  font-family: "Get Schwifty";
+  src: url("../fonts/get-schwifty.woff") format("woff");
+}
+
+* {
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.nono {
+  margin: 0 auto;
+  font-family: "Get Schwifty";
+  color: #00afc6;
+  text-shadow: 5px 5px 10px #17d297;
+  filter: drop-shadow(5px 5px 10px #e5d169);
+  font-size: 10vw;
+  -webkit-text-stroke: 0.1px black;
+}
+
+.spaceship {
+  position: absolute;
+  width: 200px;
+  z-index: -1;
+  animation: moveIn 15s 5s infinite;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: -100%;
+}
+
+@keyframes moveIn {
+  from {
+    left: -100%;
+    transform: translateX(-100%) rotate(0deg) translateY(100%);
+  }
+  to {
+    left: 100%;
+    transform: translateX(100%) rotate(360deg) translateY(-100%);
+  }
+}
+
+.swal2-popup {
+  color: #00afc6;
+  background-color: #000;
+  padding: 5px 10px;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.App {
+  height: 100vh;
+}
+
+.residentgrid {
+  margin: 0 auto;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.residentInfo__card {
+  text-align: left;
+  max-width: 300px;
+  background-color: #053138;
+  color: #fbfbfb;
+  height: max-content;
+  cursor: pointer;
+  transition: transform 0.5s, filter 0.5s;
+}
+
+.residentInfo__card:hover {
+  filter: drop-shadow(5px 5px 10px #17d297);
+  transform: rotate(2deg);
+}
+
+.residentInfo__card figure {
+  position: relative;
+  width: 100%;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.residentInfo__card figure div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #062226;
+  position: absolute;
+  top: 25px;
+  width: 120px;
+  height: 30px;
+  padding: 0.2rem;
+  border-radius: 0 15px 15px 0;
+}
+
+.residentInfo__card figure figcaption {
+  padding: 1rem;
+  font-size: 32px;
+  border-bottom: 1px solid green;
+}
+
+.residentInfo__card--statuscolor {
+  background-color: #938686;
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: block;
+}
+
+.unknown {
+  background-color: #938686;
+}
+
+.Alive {
+  background-color: #4ab648;
+}
+
+.Dead {
+  background-color: #b94343;
+}
+
+.residentInfo__card section ul {
+  padding: 0 1rem 1rem;
+  color: #fbfbfb;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.residentInfo__card section ul li {
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 18px;
+}
+
+.residentInfo__card section ul li span {
+  color: #7e7e7e;
+  font-size: 20px;
+}
