@@ -6,39 +6,54 @@
 }
 
 * {
-  overflow-x: hidden;
   font-family: "Roboto", sans-serif;
 }
 
 .nono {
+  padding: 2rem;
   margin: 0 auto;
   font-family: "Get Schwifty";
   color: #00afc6;
   text-shadow: 5px 5px 10px #17d297;
   filter: drop-shadow(5px 5px 10px #e5d169);
-  font-size: 10vw;
+  font-size: 10em;
   -webkit-text-stroke: 0.1px black;
 }
 
 .spaceship {
-  position: absolute;
+  background-attachment: fixed;
   width: 200px;
   z-index: -1;
-  animation: moveIn 15s 5s infinite;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  left: -100%;
+  position: fixed;
+  top: 50%;
+  left: -40%;
+  animation: move 20s ease-in-out 10s infinite;
+  animation-delay: 10s;
+  width: 150px;
 }
 
-@keyframes moveIn {
-  from {
-    left: -100%;
-    transform: translateX(-100%) rotate(0deg) translateY(100%);
+@keyframes move {
+  0% {
+    left: -40%;
+    scale: 1;
+    transform: rotate(0deg);
   }
-  to {
-    left: 100%;
-    transform: translateX(100%) rotate(360deg) translateY(-100%);
+  25% {
+    scale: 2;
+    left: 60%;
+  }
+  50% {
+    left: 80%;
+    scale: 1;
+  }
+  75% {
+    left: 40%;
+    scale: 2.5;
+  }
+  100% {
+    left: -40%;
+    scale: 0;
+    transform: rotate(360deg);
   }
 }
 
@@ -58,7 +73,7 @@
   margin: 0 auto;
   max-width: 1400px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   justify-items: center;
   padding: 2rem;
@@ -67,7 +82,7 @@
 
 .residentInfo__card {
   text-align: left;
-  max-width: 300px;
+  max-width: 270px;
   background-color: #053138;
   color: #fbfbfb;
   height: max-content;
@@ -102,7 +117,7 @@
 
 .residentInfo__card figure figcaption {
   padding: 1rem;
-  font-size: 32px;
+  font-size: 28px;
   border-bottom: 1px solid green;
 }
 
@@ -146,5 +161,5 @@
 
 .residentInfo__card section ul li span {
   color: #7e7e7e;
-  font-size: 20px;
+  font-size: 18px;
 }
