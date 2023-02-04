@@ -116,9 +116,9 @@
 }
 
 .residentInfo__card figure figcaption {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   font-size: 28px;
-  border-bottom: 1px solid green;
+  border-bottom: 1px solid #48eebc;
 }
 
 .residentInfo__card--statuscolor {
