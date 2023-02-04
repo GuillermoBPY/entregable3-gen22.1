@@ -66,7 +66,7 @@
 }
 
 .App {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .residentgrid {
@@ -162,4 +162,62 @@
 .residentInfo__card section ul li span {
   color: #7e7e7e;
   font-size: 18px;
+}
+
+.homecontainer {
+  background-image: url(../img/homeintro.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #222222;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1000;
+}
+.homecontainer img {
+  object-fit: cover;
+  display: none;
+}
+
+.animation {
+  animation: slide-out-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@keyframes slide-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+}
+
+.homecontainer button {
+  position: relative;
+  bottom: -92%;
+  left: 44%;
+  -webkit-text-stroke: 0.1px black;
+  background-color: transparent;
+  color: #48eebc;
+  border: 6px solid #4ab648;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: tahoma;
+  letter-spacing: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  filter: drop-shadow(0 0 15px #4ab648) drop-shadow(0 0 50px #4ab648)
+  contrast(1) brightness(1);
+  transition: all 1s;
+}
+
+.homecontainer button:hover {
+  background-color: #4ab648;
+  filter: drop-shadow(0 0 20px #4ab648) contrast(1) brightness(1);
 }

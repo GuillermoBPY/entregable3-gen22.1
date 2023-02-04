@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 
 const ResidentInfo = ({ url }) => {
   const [resident, setresident] = useState("");
+  
 
   const callApi = () => {
     axios

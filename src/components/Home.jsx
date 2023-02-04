@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Home = () => {
+  const [intro, setintro] = useState()
+
+const handleDisplay = () => setintro("animation")
+
   return (
-    <div>Home</div>
+    <div className={`homecontainer ${intro}`}>
+    
+    <button onClick={handleDisplay}>ENTER</button>
+    
+    </div>
   )
 }
 

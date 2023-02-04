@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <ParticlesBG />
-      <Home />
+      <Home/>
       <SearchBar setnumberLocation={setnumberLocation} />
       <Location locationinfo={locationinfo} />
       <div className="residentgrid">
