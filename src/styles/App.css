@@ -67,6 +67,7 @@
 
 .App {
   min-height: 100vh;
+  padding: 1rem;
 }
 
 .residentgrid {
@@ -241,7 +242,7 @@
 }
 
 .tvfigure {
-  max-width: 800px;
+  max-width: 500px;
   margin: 0 auto;
   margin-top: 190px;
   position: relative;
