@@ -5,7 +5,7 @@ const Location = ({locationinfo}) => {
 
 
   return (
-    <article>
+    <article className='location'>
       <h2>{locationinfo?.name}</h2>
       <ul>
         <li><span>Type: </span>{locationinfo?.type}</li>

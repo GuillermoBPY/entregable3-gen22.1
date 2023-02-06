@@ -22,7 +22,7 @@ const ParticlesBG = () => {
   "autoPlay": true,
   "background": {
     "color": {
-      "value": "#000000"
+      "value": "#05292e"
     },
     "image": "",
     "position": "",

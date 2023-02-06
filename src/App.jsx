@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import Header from "./components/Header";
 import Home from "./components/Home";
 import Location from "./components/Location";
 import ParticlesBG from "./components/ParticlesBG";
@@ -26,6 +27,7 @@ function App() {
     <div className="App">
       <ParticlesBG />
       <Home/>
+      <Header />
       <SearchBar setnumberLocation={setnumberLocation} />
       <Location locationinfo={locationinfo} />
       <div className="residentgrid">
