@@ -30,7 +30,7 @@ const Header = () => {
       <button className={`tvbutton ${button} `} onClick={playVideo}></button>
         <img className="tvimg" src="../img/tv.png" alt="" />
         <video ref={videoRef} key="videoclip2" loop>
-          <source src="../video/rickymortyvideo2.mp4" type="video/mp4" />
+          <source  className="tvvideo" src="../video/rickymortyvideo2.mp4" type="video/mp4" />
         </video>
         {showclick && <img className="header__figure--clickme" src="../img/clickme.png" alt="" />}
       </figure>

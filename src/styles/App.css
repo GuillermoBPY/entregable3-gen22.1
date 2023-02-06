@@ -259,6 +259,13 @@ video {
   left: 50%;
   transform: translateX(-50%);
 }
+
+
+.tvvideo{
+  background-image: url(../img/tvapagada.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .header__figure--clickme{
   position: absolute;
   right: 0;
