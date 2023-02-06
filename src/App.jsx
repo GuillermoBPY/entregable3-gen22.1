@@ -26,16 +26,18 @@ function App() {
   return (
     <div className="App">
       <ParticlesBG />
-      <Home/>
+      <Home />
       <Header />
       <SearchBar setnumberLocation={setnumberLocation} />
       <Location locationinfo={locationinfo} />
       <div className="residentgrid">
-        { locationinfo?.residents.length === 0 
-        ? <h1 className="nono">No known residents</h1>
-        :locationinfo?.residents?.map((url) => (
-          <ResidentInfo key={url} url={url} />
-        ))}
+        {locationinfo?.residents.length === 0 ? (
+          <h1 className="nono">No known residents</h1>
+        ) : (
+          locationinfo?.residents?.map((url) => (
+            <ResidentInfo key={url} url={url} />
+          ))
+        )}
       </div>
     </div>
   );

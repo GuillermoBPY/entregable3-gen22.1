@@ -17,7 +17,11 @@ body {
   height: 100%;
 }
 
-h1, h2, h3, p, ul {
+h1,
+h2,
+h3,
+p,
+ul {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -34,4 +38,23 @@ input {
 }
 button {
   border: none;
+}
+
+* {
+  scrollbar-width: thin;
+
+  scrollbar-color: #48eebc #ffffff;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #48eebc;
+  border-radius: 10px;
 }

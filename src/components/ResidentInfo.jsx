@@ -12,7 +12,7 @@ const ResidentInfo = ({ url }) => {
       .catch((err) => console.log(err));
   };
 
-  // useEffect(callApi, []);
+  useEffect(callApi, []);
 
   return (
     <article className="residentInfo__card">

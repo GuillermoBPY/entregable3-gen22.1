@@ -66,8 +66,9 @@
 }
 
 .App {
-  min-height: 100vh;
+  height: 100%;
   padding: 1rem;
+  overflow-y: scroll;
 }
 
 .residentgrid {
@@ -228,7 +229,7 @@
   right: 0;
   top: 0;
   background-color: #05292e;
-  border-bottom: 1px solid #48eebc;
+  border-bottom: 1px solid rgb(72, 238, 188);
 }
 
 .header__figure {
@@ -250,7 +251,8 @@
   overflow: hidden;
 }
 
-video {
+video,
+.tvimgoff {
   border: 1px solid rgb(9, 9, 60);
   position: absolute;
   width: 97%;
@@ -260,13 +262,7 @@ video {
   transform: translateX(-50%);
 }
 
-
-.tvvideo{
-  background-image: url(../img/tvapagada.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.header__figure--clickme{
+.header__figure--clickme {
   position: absolute;
   right: 0;
   bottom: 15%;
