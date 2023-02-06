@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 
 const ResidentInfo = ({ url }) => {
   const [resident, setresident] = useState("");
-  
 
   const callApi = () => {
     axios
@@ -17,7 +16,12 @@ const ResidentInfo = ({ url }) => {
   return (
     <article className="residentInfo__card">
       <figure>
-        <div><span className={`residentInfo__card--statuscolor ${resident?.status}`}></span>{resident?.status}</div>
+        <div>
+          <span
+            className={`residentInfo__card--statuscolor ${resident?.status}`}
+          ></span>
+          {resident?.status}
+        </div>
         <img src={resident?.image} alt={resident?.name} />
         <figcaption>{resident?.name}</figcaption>
       </figure>

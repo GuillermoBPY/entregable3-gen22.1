@@ -9,7 +9,7 @@ const SearchBar = ({ setnumberLocation }) => {
     if (!valueverification) {
       Swal.fire({
         title: "BUEEEEERP",
-        text: "You must provide an ID beteewn 1 and 126",
+        text: "You must provide an ID beteewn 1 and 126 you fucking idiot!",
         imageUrl: "../img/burp.gif",
         imageWidth: 400,
         imageHeight: 200,
@@ -33,10 +33,10 @@ const SearchBar = ({ setnumberLocation }) => {
 
   return (
     <div className="searchbox">
-    <form onSubmit={handleSubmit} action="">
-      <input type="text" name="" id="inputLocation" />
-      <button>Search</button>
-    </form>
+      <form onSubmit={handleSubmit} action="">
+        <input type="text" name="" id="inputLocation" />
+        <button>Search</button>
+      </form>
     </div>
   );
 };

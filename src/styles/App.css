@@ -222,6 +222,10 @@
   filter: drop-shadow(0 0 20px #4ab648) contrast(1) brightness(1);
 }
 
+.header {
+  margin-top: 15vh;
+}
+
 .header__banner {
   position: fixed;
   z-index: 20;
@@ -238,14 +242,13 @@
 }
 
 .header__figure--img {
-  max-width: 500px;
+  max-width: 300px;
   margin: 0 auto;
 }
 
 .tvfigure {
   max-width: 500px;
   margin: 0 auto;
-  margin-top: 190px;
   position: relative;
   z-index: 1;
   overflow: hidden;
